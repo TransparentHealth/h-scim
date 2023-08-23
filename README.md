@@ -3,7 +3,7 @@
 This is a DRAFT and is published here for pubic comment. This provides an alternative to FHIR as a way to represent provider networks.  H-SCIM specially includes non-provider persons such as office staff.
 
 
-SCIM stands for the "System for Cross-domain Identity Management". The SCIM  protocol can be is published by IETF and can be found here: https://datatracker.ietf.org/doc/html/rfc7644  
+SCIM stands for the "System for Cross-domain Identity Management". The SCIM protocol is published by IETF and can be found here: https://datatracker.ietf.org/doc/html/rfc7644  
 
 SCIM uses a JSON as its data model.
 H-SCIM is a profile that adds a few additional fields to facilitate US-based healthcare commerce. It doesn't change the SCIM protocol or fields. It only add some data elements. Additional information stored in H-SCIM includes:
