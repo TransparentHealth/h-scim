@@ -50,7 +50,7 @@ The following table outlines specific additions for **SCIM Users**.  Fields alre
 | `userType`        | string    | Yes      | This field identifies the user type. It must be one of the following values: `NPI-1`, `Employee` |
 | `ial`             | string    | No       | A value for the users' Identity Assurance Level (IAL) according to NIST SP 800-63-3. see https://pages.nist.gov/800-63-3/sp800-63-3.html |
 | `npi`             | string    | No       | The user's individual "Type 1" National Provider Identifier number (if they have one). This value SHALL be present when `userType`=`NPI-1`. |
-
+|----------------------------------------------------------------------------|
 
 
 Example
