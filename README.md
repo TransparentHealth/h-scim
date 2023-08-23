@@ -15,9 +15,7 @@ H-SCIM is a profile that adds a few additional fields to facilitate US-based hea
 
 H-SCIM is an easy to understand data model that can power provider directory APIs that are easy to query and integrate into other systems ans services.
 
-| Field Name          | Type      | Required | Notes                       |
-|---------------------|-----------|----------|-----------------------------|
-|`externalId`          | string    | Yes      | externalID is a unique "tag" for an Organization. SCIM does not require this field, but it is required in for Organizations in SCIM|
+
 
 Organization Groups in H-SCIM
 -----------------------------
@@ -27,8 +25,8 @@ In H-SCIM, an Organization is represented as an SCIM Group. Organization Groups 
 
 Fields already defined in the base SCIM specification and remain unchanged are not listed here for brevity. The following table outlines specific additions for **SCIM Groups**.
 
-| Field Name         | Type      | Required | Notes                       |
-|----------------------------------------------------------------------------|
+| Field Name         | Type      | Required | Notes                           |
+|--------------------|-----------|----------|---------------------------------|
 |`externalId`          | string    | Yes      | externalID is a unique "tag" for an Organization. SCIM does not require this field, but it is required in for Organizations in SCIM|
 | `organizationType`   | string    | Yes      | This field identified the organization type. It must be one of the following values: `provider-org` `payer-org`, `other-org`, `sole-proprietor`, `NPI-2` |
 | `domain`             | string    | No       | A work domain used for staff login |
@@ -49,12 +47,12 @@ In H-SCIM, a person is represented as an SCIM User. H-SCIM defines additional fi
 The following table outlines specific additions for **SCIM Users**.  Fields already defined in SCIM that remain unchanged are omitted for brevity.
 
 
-| Field Name         | Type      | Required | Notes                         |
-|----------------------------------------------------------------------------
-| `userType`        | string    | Yes      | This field identifies the user type. It must be one of the following values: `NPI-1`, `Employee` |
-| `ial`             | string    | No       | A value for the users' Identity Assurance Level (IAL) according to NIST SP 800-63-3. see https://pages.nist.gov/800-63-3/sp800-63-3.html |
-| `npi`             | string    | No       | The user's individual "Type 1" National Provider Identifier number (if they have one). This value SHALL be present when `userType`=`NPI-1`. |
-|----------------------------------------------------------------------------|
+| Field Name         | Type      | Required | Notes                           |
+|--------------------|-----------|----------|---------------------------------|
+| `userType`         | string    | Yes      | This field identifies the user type. It must be one of the following values: `NPI-1`, `Employee` |
+| `ial`              | string    | No       | A value for the users' Identity Assurance Level (IAL) according to NIST SP 800-63-3. see https://pages.nist.gov/800-63-3/sp800-63-3.html |
+| `npi`              | string    | No       | The user's individual "Type 1" National Provider Identifier number (if they have one). This value SHALL be present when `userType`=`NPI-1`. |
+
 
 
 Example
