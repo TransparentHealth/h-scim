@@ -6,7 +6,7 @@ This is a DRAFT and is published here for pubic comment. This provides an altern
 SCIM stands for the "System for Cross-domain Identity Management". The SCIM protocol is published by IETF and can be found here: https://datatracker.ietf.org/doc/html/rfc7644  
 
 SCIM uses a JSON as its data model.
-H-SCIM is a profile that adds a few additional fields to facilitate US-based healthcare commerce. It doesn't change the SCIM protocol or fields. It only add some data elements. Additional information stored in H-SCIM includes:
+H-SCIM is a profile that adds a few additional fields to facilitate US-based healthcare commerce. It doesn't change the SCIM protocol or fields. It only add some data elements. Examples of additional information stored in H-SCIM include:
 
 * Tax IDs/ Employer Identification Number (Optional)
 * National Provider Identifiers (NPI) for Organizations, Subparts, Facilities and Individuals
