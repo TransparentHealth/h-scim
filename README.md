@@ -1,6 +1,6 @@
 # H-SCIM (DRAFT) is a Healthcare profile of SCIM for "Provider Directories"
 
-This is a DRAFT and is published here for pubic comment. This provides an alternative to FHIR as a way to represent provider networks.  H-SCIM specially includes non-provider persons. Such as offies staff, are included.
+This is a DRAFT and is published here for pubic comment. This provides an alternative to FHIR as a way to represent provider networks.  H-SCIM specially includes non-provider persons such as office staff.
 
 
 SCIM stands for the "System for Cross-domain Identity Management". The SCIM  protocol can be is published by IETF and can be found here: https://datatracker.ietf.org/doc/html/rfc7644  
