@@ -15,6 +15,10 @@ H-SCIM is a profile that adds a few additional fields to facilitate US-based hea
 
 H-SCIM is an easy to understand data model that can power provider directory APIs that are easy to query and integrate into other systems ans services.
 
+| Field Name          | Type      | Required | Notes                       |
+|---------------------|-----------|----------|-----------------------------|
+|`externalId`          | string    | Yes      | externalID is a unique "tag" for an Organization. SCIM does not require this field, but it is required in for Organizations in SCIM|
+
 Organization Groups in H-SCIM
 -----------------------------
 
