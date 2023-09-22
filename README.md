@@ -1,6 +1,6 @@
 # H-SCIM (DRAFT) is a Healthcare profile of SCIM for "Provider Directories"
 
-This is a DRAFT and is published here for public comment.
+This is a DRAFT and is published here for public comment. Pull requests welcome.
 
 H-SCIM is a JSON document format to represent organizations in healthcare. Its core design goal is to be easy to search.  Its total ecosystem is the following:# H-SCIM (DRAFT) is a Healthcare profile of SCIM for "Provider Directories"
 
