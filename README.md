@@ -26,7 +26,6 @@ The core set of JSON Documents in H-SCIM consist of Organizations of the followi
 * Insurance or Billing Companies -`payer-org`
 * Other Organizations (for example, non-ambulatory transportation to healthcare appointment) - `other-org`
 * National Provider Identifiers (NPI) Tpye 2 for Organizations, Subparts, Facilities - `npi-2`
-Read more on
 
 
 H-SCIM is an easy to understand data model that can power provider directory APIs that are easy to query and integrate into other systems ans services.
