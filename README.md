@@ -1,20 +1,35 @@
 # H-SCIM (DRAFT) is a Healthcare profile of SCIM for "Provider Directories"
 
-This is a DRAFT and is published here for pubic comment. This provides an alternative to FHIR as a way to represent provider networks.  H-SCIM specially includes non-provider persons such as office staff.
+This is a DRAFT and is published here for public comment.
+
+H-SCIM is a JSON document format to represent organizations in healthcare. Its core design goal is to be easy to search.  Its total ecosystem is the following:
+
+* Organizations
+* Individual clinicians
+* Office staff
+* Billing organizations
+* Other organizations (for example, transportation to a medical appointment)
 
 
 SCIM stands for the "System for Cross-domain Identity Management". The SCIM protocol is published by IETF and can be found here: https://datatracker.ietf.org/doc/html/rfc7644  
 
-SCIM uses a JSON as its data model.
-H-SCIM is a profile that adds a few additional fields to facilitate US-based healthcare commerce. It doesn't change the SCIM protocol or fields. It only add some data elements. Examples of additional information stored in H-SCIM include:
+SCIM uses a JSON as its data model. H-SCIM is a profile that adds a few additional fields to facilitate US-based healthcare commerce. It doesn't change the SCIM protocol or fields. It only add some data elements. Examples of additional information stored in H-SCIM include:
 
 * Tax IDs/ Employer Identification Number (Optional)
 * National Provider Identifiers (NPI) for Organizations, Subparts, Facilities and Individuals
 * Domains (e.g. work email domains used for login at the company by its employees/agents). (Optional)
 
 
-H-SCIM is an easy to understand data model that can power provider directory APIs that are easy to query and integrate into other systems ans services.
+The core set of JSON Documents in H-SCIM consist of Organizations of the following `organizationType` type:
 
+* Health Care Providers -`provider-org`
+* Insurance or Billing Companies -`payer-org`
+* Other Organizations (for example, non-ambulatory transportation to healthcare appointment) - `other-org`
+* National Provider Identifiers (NPI) Tpye 2 for Organizations, Subparts, Facilities - `npi-2`
+Read more on
+
+
+H-SCIM is an easy to understand data model that can power provider directory APIs that are easy to query and integrate into other systems ans services.
 
 
 Organization Groups in H-SCIM
@@ -28,7 +43,7 @@ Fields already defined in the base SCIM specification and remain unchanged are n
 | Field Name         | Type      | Required | Notes                           |
 |--------------------|-----------|----------|---------------------------------|
 |`externalId`          | string    | Yes      | externalID is a unique "tag" for an Organization. SCIM does not require this field, but it is required in for Organizations in SCIM|
-| `organizationType`   | string    | Yes      | This field identified the organization type. It must be one of the following values: `provider-org` `payer-org`, `other-org`, `sole-proprietor`, `NPI-2` |
+| `organizationType`   | string    | Yes      | This field identified the organization type. It must be one of the following values: `provider-org` `payer-org`, `other-org`, `sole-proprietor`, `npi_2` |
 | `domain`             | string    | No       | A work domain used for staff login |
 | `tin`                | string    | No      | A Tax Identification number such as a EIN |
 | `tinType`            | string    | No      | A field to identify the type of tax ID. It must be one of the following values: `EIN`, `ITIN`, `SSN`|
